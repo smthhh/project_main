@@ -1,0 +1,74 @@
+.first-container .head-content .left-content .btn-wrap,
+.catalouge-projects .box-img .btn-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.first-container .head-content .left-content .btn-wrap .btn-catalog,
+.catalouge-projects .box-img .btn-wrap .btn-catalog,
+.about-company .content .btn-wrap .btn-catalog {
+    display: inline-block;
+    text-decoration: none;
+    padding: 25px 55px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(203, 135, 52, 0.2);
+    background: linear-gradient(180deg, #f39c32 0%, #cb8734 100%);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--3);
+    margin-right: 44px;
+    transition: 0.5s;
+}
+
+
+.first-container .head-content .left-content .btn-wrap .btn-catalog-ban,
+.catalouge-projects .box-img .btn-wrap .btn-catalog-ban,
+.cat-proj .content .boxs .btn-wrap .btn-catalog-ban {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: var(--5);
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 144px;
+    height: 30px;
+    transition: 0.5s;
+}
+
+.first-container .head-content .left-content .btn-wrap .btn-catalog:hover,
+.catalouge-projects .box-img .btn-wrap .btn-catalog:hover,
+.first-container .head-content .left-content .btn-wrap .btn-catalog-ban:hover,
+.catalouge-projects .box-img .btn-wrap .btn-catalog-ban:hover,
+.about-company .content .btn-wrap .btn-catalog:hover,
+.cat-proj .content .boxs .btn-wrap .btn-catalog-ban:hover {
+    transform: scale(1.2);
+}
+
+.first-container .head-content .left-content .btn-wrap .btn-catalog-ban img:first-of-type,
+.catalouge-projects .box-img .btn-wrap .btn-catalog-ban img:first-of-type,
+.cat-proj .content .boxs .btn-wrap .btn-catalog-ban img:first-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+}
+.first-container .head-content .left-content .btn-wrap .btn-catalog-ban img:last-of-type,
+.catalouge-projects .box-img .btn-wrap .btn-catalog-ban img:last-of-type,
+.cat-proj .content .boxs .btn-wrap .btn-catalog-ban img:last-of-type {
+    position: absolute;
+    top: 9px;
+    left: 12px;
+    width: 7px;
+    height: 12px;
+}
+
+.first-container .head-content .left-content .btn-wrap .btn-catalog-ban span,
+.catalouge-projects .box-img .btn-wrap .btn-catalog-ban span,
+.cat-proj .content .boxs .btn-wrap .btn-catalog-ban span {
+    margin-left: 42px;
+}
