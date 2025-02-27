@@ -1,0 +1,14 @@
+
+.about .navig {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.about .navig a,
+.about .navig span {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 142%;
+    color: var(--10);
+}

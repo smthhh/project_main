@@ -141,33 +141,30 @@ table {
     margin: 0 auto;
 }
 
-/* first-container */
 /* header */
 
-.first-container {
+.header {
     background-color: var(--6);
-    border: 1px solid #000;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.first-container .header-top {
+.header .header-top {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 22px;
 }
 
-.first-container .header-top .logo {
+.header .header-top .logo {
     display: grid;
     grid-template-columns: 251px 255px;
     column-gap: 30px;
 }
 
-.first-container .header-top .logo img {
+.header .header-top .logo img {
     width: 251px;
     height: 36px;
 }
 
-.first-container .header-top .logo span {
+.header .header-top .logo span {
     font-weight: 600;
     font-size: 13px;
     line-height: 138%;
@@ -175,7 +172,7 @@ table {
     color: var(--1);
 }
 
-.first-container .header-top .contact {
+.header .header-top .contact {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -184,16 +181,16 @@ table {
     margin-left: 34px;
 }
 
-.first-container .header-top .contact a {
+.header .header-top .contact a {
     text-decoration: none;
 }
 
-.first-container .header-top .contact a img {
+.header .header-top .contact a img {
     width: 26px;
     height: 26px;
 }
 
-.first-container .header-top .contact span {
+.header .header-top .contact span {
     font-weight: 600;
     font-size: 12px;
     line-height: 150%;
@@ -203,7 +200,7 @@ table {
     margin-bottom: -20px;
 }
 
-.first-container .header-top .work-time .number {
+.header .header-top .work-time .number {
     font-weight: 700;
     font-size: 20px;
     line-height: 80%;
@@ -211,7 +208,7 @@ table {
     color: var(--1);
 }
 
-.first-container .header-top .work-time .work-to {
+.header .header-top .work-time .work-to {
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
@@ -219,7 +216,7 @@ table {
     color: var(--1);
 }
 
-.first-container .header-top .work-time .ordercall-free {
+.header .header-top .work-time .ordercall-free {
     font-weight: 700;
     font-size: 13px;
     line-height: 123%;
@@ -227,7 +224,7 @@ table {
     color: var(--3);
 }
 
-.first-container .header-top .work-time .call-free {
+.header .header-top .work-time .call-free {
     font-weight: 400;
     font-size: 11px;
     line-height: 164%;
@@ -235,7 +232,7 @@ table {
     color: var(--1);
 }
 
-.first-container .header-bottom .menu .color-brown li {
+.header .header-bottom .menu .color-brown li {
     border-radius: 8px;
     width: 620px;
     height: 72px;
@@ -248,11 +245,19 @@ table {
     stroke: #e5ebf2;
 }
 
-.first-container .header-bottom .menu .color-brown li a {
+.header .header-bottom .menu .color-brown li a {
     text-decoration: none;
 }
 
+/* first-container */
+
 /* head-content */
+
+.first-container {
+    background-color: var(--6);
+    border: 0px 1px 1px 1px solid #000;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
 
 .first-container .head-content {
     display: grid;

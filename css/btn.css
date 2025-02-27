@@ -8,7 +8,8 @@
 
 .first-container .head-content .left-content .btn-wrap .btn-catalog,
 .catalouge-projects .box-img .btn-wrap .btn-catalog,
-.about-company .content .btn-wrap .btn-catalog {
+.about-company .content .btn-wrap .btn-catalog,
+.about .content .btn-wrap .btn-catalog {
     display: inline-block;
     text-decoration: none;
     padding: 25px 55px;
@@ -25,7 +26,9 @@
 
 .first-container .head-content .left-content .btn-wrap .btn-catalog-ban,
 .catalouge-projects .box-img .btn-wrap .btn-catalog-ban,
-.cat-proj .content .boxs .btn-wrap .btn-catalog-ban {
+.cat-proj .content .boxs .btn-wrap .btn-catalog-ban,
+.about .info .btn-wrap .btn-catalog-ban,
+.about .content .btn-wrap .btn-catalog-ban {
     font-weight: 600;
     font-size: 16px;
     line-height: 100%;
@@ -44,13 +47,18 @@
 .first-container .head-content .left-content .btn-wrap .btn-catalog-ban:hover,
 .catalouge-projects .box-img .btn-wrap .btn-catalog-ban:hover,
 .about-company .content .btn-wrap .btn-catalog:hover,
-.cat-proj .content .boxs .btn-wrap .btn-catalog-ban:hover {
+.cat-proj .content .boxs .btn-wrap .btn-catalog-ban:hover,
+.about .info .btn-wrap .btn-catalog-ban:hover,
+.about .content .btn-wrap .btn-catalog-ban:hover,
+.about .content .btn-wrap .btn-catalog:hover {
     transform: scale(1.2);
 }
 
 .first-container .head-content .left-content .btn-wrap .btn-catalog-ban img:first-of-type,
 .catalouge-projects .box-img .btn-wrap .btn-catalog-ban img:first-of-type,
-.cat-proj .content .boxs .btn-wrap .btn-catalog-ban img:first-of-type {
+.cat-proj .content .boxs .btn-wrap .btn-catalog-ban img:first-of-type,
+.about .info .btn-wrap .btn-catalog-ban img:first-of-type,
+.about .content .btn-wrap .btn-catalog-ban  img:first-of-type {
     position: absolute;
     top: 0;
     left: 0;
@@ -59,7 +67,9 @@
 }
 .first-container .head-content .left-content .btn-wrap .btn-catalog-ban img:last-of-type,
 .catalouge-projects .box-img .btn-wrap .btn-catalog-ban img:last-of-type,
-.cat-proj .content .boxs .btn-wrap .btn-catalog-ban img:last-of-type {
+.cat-proj .content .boxs .btn-wrap .btn-catalog-ban img:last-of-type,
+.about .info .btn-wrap .btn-catalog-ban img:last-of-type,
+.about .content .btn-wrap .btn-catalog-ban img:last-of-type {
     position: absolute;
     top: 9px;
     left: 12px;
@@ -69,6 +79,8 @@
 
 .first-container .head-content .left-content .btn-wrap .btn-catalog-ban span,
 .catalouge-projects .box-img .btn-wrap .btn-catalog-ban span,
-.cat-proj .content .boxs .btn-wrap .btn-catalog-ban span {
+.cat-proj .content .boxs .btn-wrap .btn-catalog-ban span,
+.about .info .btn-wrap .btn-catalog-ban span,
+.about .content .btn-wrap .btn-catalog-ban span {
     margin-left: 42px;
 }
