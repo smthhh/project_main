@@ -11,4 +11,9 @@
     font-size: 12px;
     line-height: 142%;
     color: var(--10);
+    transition: .3s;
+}
+
+.about .navig a:hover {
+    text-decoration: underline;
 }
