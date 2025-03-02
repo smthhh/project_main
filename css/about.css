@@ -1,11 +1,14 @@
 
-.about .navig {
+.about .navig,
+.contacts .top-content .navig {
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
 .about .navig a,
-.about .navig span {
+.about .navig span,
+.contacts .top-content .navig a,
+.contacts .top-content .navig span {
     text-decoration: none;
     font-weight: 400;
     font-size: 12px;
@@ -14,6 +17,7 @@
     transition: .3s;
 }
 
-.about .navig a:hover {
+.about .navig a:hover,
+.contacts .top-content .navig a:hover {
     text-decoration: underline;
 }

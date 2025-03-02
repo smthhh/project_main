@@ -1,5 +1,5 @@
 .first-container .head-content .left-content .btn-wrap,
-.catalouge-projects .box-img .btn-wrap {
+.catalouge-projects .box-img .btn-wrap{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -28,7 +28,8 @@
 .catalouge-projects .box-img .btn-wrap .btn-catalog-ban,
 .cat-proj .content .boxs .btn-wrap .btn-catalog-ban,
 .about .info .btn-wrap .btn-catalog-ban,
-.about .content .btn-wrap .btn-catalog-ban {
+.about .content .btn-wrap .btn-catalog-ban,
+.contacts .top-content .info .btn-wrap .btn-catalog-ban {
     font-weight: 600;
     font-size: 16px;
     line-height: 100%;
@@ -50,7 +51,8 @@
 .cat-proj .content .boxs .btn-wrap .btn-catalog-ban:hover,
 .about .info .btn-wrap .btn-catalog-ban:hover,
 .about .content .btn-wrap .btn-catalog-ban:hover,
-.about .content .btn-wrap .btn-catalog:hover {
+.about .content .btn-wrap .btn-catalog:hover ,
+.contacts .top-content .info .btn-wrap .btn-catalog-ban:hover{
     transform: scale(1.2);
 }
 
@@ -58,7 +60,8 @@
 .catalouge-projects .box-img .btn-wrap .btn-catalog-ban img:first-of-type,
 .cat-proj .content .boxs .btn-wrap .btn-catalog-ban img:first-of-type,
 .about .info .btn-wrap .btn-catalog-ban img:first-of-type,
-.about .content .btn-wrap .btn-catalog-ban  img:first-of-type {
+.about .content .btn-wrap .btn-catalog-ban  img:first-of-type,
+.contacts .top-content .info .btn-wrap .btn-catalog-ban img:first-of-type {
     position: absolute;
     top: 0;
     left: 0;
@@ -69,7 +72,8 @@
 .catalouge-projects .box-img .btn-wrap .btn-catalog-ban img:last-of-type,
 .cat-proj .content .boxs .btn-wrap .btn-catalog-ban img:last-of-type,
 .about .info .btn-wrap .btn-catalog-ban img:last-of-type,
-.about .content .btn-wrap .btn-catalog-ban img:last-of-type {
+.about .content .btn-wrap .btn-catalog-ban img:last-of-type,
+.contacts .top-content .info .btn-wrap .btn-catalog-ban img:last-of-type {
     position: absolute;
     top: 9px;
     left: 12px;
@@ -81,6 +85,7 @@
 .catalouge-projects .box-img .btn-wrap .btn-catalog-ban span,
 .cat-proj .content .boxs .btn-wrap .btn-catalog-ban span,
 .about .info .btn-wrap .btn-catalog-ban span,
-.about .content .btn-wrap .btn-catalog-ban span {
+.about .content .btn-wrap .btn-catalog-ban span,
+.contacts .top-content .info .btn-wrap .btn-catalog-ban span {
     margin-left: 42px;
 }
