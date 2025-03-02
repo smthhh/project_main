@@ -275,6 +275,12 @@ table {
     margin-bottom: 41px;
 }
 
+.first-container .head-content .left-content .mobile-active {
+    display: none;
+    width: 100%;
+    max-width: 100%;
+}
+
 .first-container .head-content .left-content p {
     font-weight: 400;
     font-size: 18px;
@@ -391,7 +397,7 @@ table {
     white-space: nowrap;
 }
 
-.cat-proj .content .boxs .btn-wrap .btn-catalog-ban span{
+.cat-proj .content .boxs .btn-wrap .btn-catalog-ban span {
     padding-top: 10px;
 }
 
@@ -494,22 +500,22 @@ table {
 
 .catalouge-projects .content-box .all-box .box1 {
     top: -47px;
-    left: 319px;
+    right: 26px;
 }
 
 .catalouge-projects .content-box .all-box .box2 {
     top: -78px;
-    left: 351px;
+    right: 14px;
 }
 
 .catalouge-projects .content-box .all-box .box3 {
     top: -29px;
-    left: 289px;
+    right: 15px;
 }
 
 .catalouge-projects .content-box .all-box .box4 {
     top: -45px;
-    left: 325px;
+    right: 39px;
 }
 
 .catalouge-projects .content-box .all-box .box1:hover,
@@ -521,14 +527,18 @@ table {
 
 .catalouge-projects .content-box .all-box .box .box-content span {
     position: absolute;
-    top: 267px;
-    left: 390px;
+    bottom: 25px;
+    right: 10px;
     z-index: 0;
     font-weight: 800;
     font-size: 140px;
     line-height: 21%;
     text-align: right;
     color: var(--51);
+}
+
+.catalouge-projects .box-img .mobile-active {
+    display: none;
 }
 
 .catalouge-projects .box-img img {
@@ -568,6 +578,11 @@ table {
 
 .about-company .content .content-top {
     position: relative;
+}
+
+.about-company .content .content-top .img-back {
+    max-width: 100%;
+    width: 100%;
 }
 
 .about-company .content .content-top .foto-img {
@@ -759,10 +774,13 @@ table {
 
 .type-building .cont .card .card-item a:hover {
     transform: scale(1.1);
+    font-weight: 600;
+    color: var(--5);
 }
 
 .type-building .cont .card .card-item a img {
     margin-right: 15px;
+    vertical-align: -6px;
 }
 
 /* last-article */
@@ -781,10 +799,494 @@ table {
     margin-bottom: 12px;
 }
 
+.last-article .article-box .ceo .ceo-txt .mobile-active {
+    display: none;
+}
+
 .last-article .article-box .ceo .ceo-txt p {
     font-weight: 300;
     font-size: 15px;
     line-height: 200%;
     color: var(--1);
     padding-right: 67px;
+}
+
+@media screen and (max-width: 1300px) {
+    .about-company .content .content-top .foto-img {
+        width: 39%;
+        top: -14%;
+        left: 32%;
+    }
+
+    .about-company .content .content-top .comments {
+        text-align: center;
+        left: calc(30% - 47px);
+        top: 77%;
+        width: 50%;
+    }
+
+    .about-company .content .content-top .comments img {
+        margin-top: 60px;
+        margin-left: 18px;
+    }
+
+    .about-company .content .content-top .comments h4 {
+        padding-right: 51px;
+    }
+
+    .about-company .content .content-top .comments p {
+        margin-bottom: 15px;
+    }
+
+    .about-company .content .content-top .play {
+        top: calc(42% - 39px);
+        left: calc(50% - -68px);
+    }
+
+    .type-building .cont .card {
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .center {
+        width: 95%;
+    }
+
+    .first-container .head-content .right-content img {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .catalouge-projects .content-box .all-box .box1 {
+        width: 35%;
+    }
+
+    .catalouge-projects .content-box .all-box .box2 {
+        width: 31%;
+        top: -15%;
+    }
+
+    .catalouge-projects .content-box .all-box .box3 {
+        width: 42%;
+    }
+
+    .catalouge-projects .content-box .all-box .box4 {
+        width: 35%;
+        right: 10px;
+    }
+
+    .catalouge-projects .content-box .all-box .box .box-content span {
+        bottom: 8%;
+        right: 4%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cat-proj {
+        background-image: none;
+    }
+
+    .catalouge-projects .content-box .all-box .box1 {
+        top: -9%;
+        width: 40%;
+    }
+
+    .catalouge-projects .content-box .all-box .box2 {
+        top: -11%;
+    }
+
+    .about-company .left-back,
+    .about-company .right-back {
+        display: none;
+    }
+
+    .about-company .content .content-bottom {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .first-container {
+        box-shadow: none;
+    }
+
+    .first-container .head-content .desktop-active {
+        display: none;
+    }
+
+    .first-container .head-content {
+        grid-template-columns: 1fr;
+        row-gap: 59px;
+    }
+
+    .first-container .head-content .left-content h1 {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 125%;
+        text-align: center;
+        margin-top: 16px;
+        margin-bottom: 17px;
+    }
+
+    .first-container .head-content .left-content p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 160%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 19px;
+    }
+
+    .first-container .head-content .left-content .btn-wrap,
+    .catalouge-projects .box-img .btn-wrap {
+        flex-direction: column;
+    }
+
+    .first-container .head-content .left-content .btn-wrap a.btn-catalog {
+        margin-right: 0;
+        margin-bottom: 19px;
+    }
+
+    .first-container .head-content .left-content .mobile-active {
+        display: block;
+    }
+
+    .first-container .head-content .bottom-content h3 {
+        font-size: 20px;
+        line-height: 150%;
+        text-align: center;
+        margin-top: 37px;
+        margin-left: 0;
+        margin-bottom: 13px;
+    }
+
+    .first-container .head-content .bottom-content {
+        margin-bottom: 0;
+    }
+
+    .first-container .head-content .bottom-content .all-box {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .first-container .head-content .bottom-content .all-box .box-content:first-of-type {
+        margin: 0;
+    }
+
+    .cat-proj {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .cat-proj .content .boxs {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cat-proj .content h3 {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 125%;
+        text-align: center;
+    }
+
+    .cat-proj .content .boxs .box-item2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cat-proj .content .boxs .box-item2 img {
+        order: -1;
+    }
+
+    .cat-proj .content .boxs .box-item1 img {
+        margin-bottom: 0;
+        width: -webkit-fill-available;
+    }
+
+    .cat-proj .content .boxs .box-item1 h5 {
+        margin-top: 28px;
+        margin-bottom: 9px;
+    }
+
+    .cat-proj .content .boxs .box-item1 p {
+        margin-right: 44px;
+    }
+
+    .cat-proj .content .boxs .box-item2 h5 {
+        margin-top: 28px;
+        margin-bottom: 9px;
+    }
+
+    .cat-proj .content .boxs .btn-wrap {
+        margin: 12px 44px 34px 45px;
+    }
+
+    .cat-proj .content .boxs .box-item1 {
+        height: auto;
+    }
+
+    .catalouge-projects {
+        padding-bottom: 60px;
+    }
+
+    .catalouge-projects .content-box h3 {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 125%;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .catalouge-projects .content-box .all-box {
+        grid-template-columns: 1fr;
+    }
+
+    .catalouge-projects .content-box .all-box .box1 {
+        width: 174px;
+        right: calc(50% - 88px);
+    }
+
+    .catalouge-projects .content-box .all-box .box2 {
+        top: -45px;
+        width: 149px;
+        right: calc(50% - 68px);
+    }
+
+    .catalouge-projects .content-box .all-box .box3 {
+        top: -38px;
+        width: 237px;
+        right: calc(50% - 116px);
+    }
+
+    .catalouge-projects .content-box .all-box .box4 {
+        top: -45px;
+        width: 158px;
+        right: calc(50% - 86px);
+    }
+
+    .catalouge-projects .content-box .all-box .box .box-content h4 {
+        padding-top: 96px;
+        font-size: 24px;
+        line-height: 125%;
+        text-align: center;
+        margin: 0 0 6px 0;
+    }
+
+    .catalouge-projects .box-img .btn-wrap a.btn-catalog {
+        margin-right: 0;
+        margin-bottom: 19px;
+    }
+
+    .catalouge-projects .box-img .desktop-active {
+        display: none;
+    }
+
+    .catalouge-projects .box-img .mobile-active {
+        display: block;
+    }
+
+    .about-company .content h3 {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 125%;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .about-company .content .content-top .comments {
+        left: 0;
+        width: 100%;
+    }
+
+    .about-company .content .content-top .comments h4 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 133%;
+        padding: 0;
+        margin-top: 29px;
+        margin-bottom: 10px;
+    }
+
+    .about-company .content .content-top .comments h4 .mobile-active {
+        display: block;
+    }
+
+    .about-company .content .content-top .comments p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 171%;
+        margin-top: 0;
+        margin-right: 22px;
+        margin-bottom: 27px;
+        padding: 0;
+    }
+
+    .about-company .content .content-top .comments img {
+        display: none;
+    }
+
+    .about-company .content .content-bottom .box {
+        margin-top: 61px;
+    }
+
+    .about-company .content .btn-wrap {
+        padding-bottom: 60px;
+    }
+
+    .type-building {
+        padding-top: 61px;
+        padding-bottom: 60px;
+    }
+
+    .type-building .cont h3 {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 125%;
+        text-align: center;
+    }
+
+    .type-building .cont .card {
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+        margin-top: 25px;
+    }
+
+    .type-building .cont .card .card-item .top {
+        align-self: auto;
+        margin-bottom: 28px;
+    }
+
+    .type-building .cont .card .card-item h5 {
+        font-size: 24px;
+        line-height: 125%;
+        margin-bottom: 9px;
+    }
+
+    .type-building .cont .card .card-item a {
+        font-size: 14px;
+        line-height: 143%;
+    }
+
+    .last-article .article-box {
+        margin-top: 60px;
+        margin-bottom: 56px;
+    }
+
+    .last-article .article-box .slider h3 {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 125%;
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+    .last-article .article-box .boxs {
+        overflow: scroll;
+    }
+
+    .last-article .article-box .slider {
+        display: block;
+    }
+
+    .last-article .article-box .slider img {
+        display: none;
+    }
+
+    .last-article .article-box .ceo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .last-article .article-box .ceo .ceo-txt .mobile-active {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 19px;
+        margin-bottom: 19px;
+    }
+
+    .last-article .article-box .ceo .ceo-img {
+        display: none;
+    }
+
+    .last-article .article-box .ceo .ceo-txt h5 {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 125%;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: 43px;
+        margin-right: 43px;
+    }
+
+    .last-article .article-box .ceo .ceo-txt p {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-company .content .content-bottom {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .about-company .content .content-bottom .box {
+        text-align: center;
+    }
+
+    .about-company .content .btn-wrap {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .about-company .content .btn-wrap a.btn-catalog {
+        margin-right: 0px;
+    }
+
+    
+}
+
+@media screen and (max-width: 425px) {
+    .cat-proj .content .boxs .box-item1 h5 {
+        margin-left: 20px;
+    }
+
+    .cat-proj .content .boxs .box-item1 p {
+        margin-left: 22px;
+    }
+
+    .cat-proj .content .boxs .btn-wrap {
+        margin-left: 15px;
+    }
+
+    .cat-proj .content .boxs .box-item2 h5 {
+        margin-left: 20px;
+    }
+
+    .cat-proj .content .boxs .box-item2 p {
+        margin-left: 22px;
+    }
+
+    .catalouge-projects .content-box .all-box .box .box-content p {
+        margin: 6px 15px 36px;
+    }
+
+    .catalouge-projects .content-box .all-box .box .box-content span {
+        bottom: 5%;
+        right: calc(31% - 12px);
+    }
+
+    .type-building .cont .card .card-item a {
+        margin-left: 36px;
+    }
 }
