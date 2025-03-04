@@ -4,8 +4,6 @@
 
 .headers .header-top {
     display: flex;
-    /* display: grid;
-    grid-template-columns: repeat(4, 1fr); */
     padding-top: 22px;
     margin-bottom: 18px;
     align-items: center;
@@ -237,8 +235,6 @@
 .headers .burger {
     display: none;
 }
-
-/* burger */
 
 .headers .mobile-active .hed-top {
     display: flex;
