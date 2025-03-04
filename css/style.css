@@ -141,118 +141,6 @@ table {
     margin: 0 auto;
 }
 
-/* header */
-
-.header {
-    background-color: var(--6);
-}
-
-.header .header-top {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-top: 22px;
-}
-
-.header .header-top .logo {
-    display: grid;
-    grid-template-columns: 251px 255px;
-    column-gap: 30px;
-}
-
-.header .header-top .logo img {
-    width: 251px;
-    height: 36px;
-}
-
-.header .header-top .logo span {
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 138%;
-    letter-spacing: 0.08em;
-    color: var(--1);
-}
-
-.header .header-top .contact {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-right: 10px;
-    gap: 4px;
-    margin-left: 34px;
-}
-
-.header .header-top .contact a {
-    text-decoration: none;
-}
-
-.header .header-top .contact a img {
-    width: 26px;
-    height: 26px;
-}
-
-.header .header-top .contact span {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 150%;
-    letter-spacing: 0.08em;
-    color: var(--1);
-    margin-right: 40px;
-    margin-bottom: -20px;
-}
-
-.header .header-top .work-time .number {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 80%;
-    text-align: right;
-    color: var(--1);
-}
-
-.header .header-top .work-time .work-to {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    letter-spacing: 0.08em;
-    color: var(--1);
-}
-
-.header .header-top .work-time .ordercall-free {
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 123%;
-    text-align: center;
-    color: var(--3);
-}
-
-.header .header-top .work-time .call-free {
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 164%;
-    letter-spacing: 0.08em;
-    color: var(--1);
-}
-
-.header .header-bottom .menu .color-brown li {
-    border-radius: 8px;
-    width: 620px;
-    height: 72px;
-    box-shadow: 0 0 20px 0 rgba(43, 42, 40, 0.2);
-    background: var(--7);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    stroke-width: 1px;
-    stroke: #e5ebf2;
-}
-
-.header .header-bottom .menu .color-brown li a {
-    text-decoration: none;
-}
-
-/* first-container */
-
-/* head-content */
-
 .first-container {
     background-color: var(--6);
     border: 0px 1px 1px 1px solid #000;
@@ -333,8 +221,6 @@ table {
     line-height: 200%;
     color: var(--1);
 }
-
-/* cat=proj */
 
 .cat-proj {
     background-image: url(../images/cot-proj.png);
@@ -432,8 +318,6 @@ table {
 .cat-proj .content .boxs .box-item2 img {
     margin: 5px;
 }
-
-/* catalouge-projects */
 
 .catalouge-projects {
     background-color: var(--6);
@@ -546,8 +430,6 @@ table {
     max-width: 100%;
     margin-bottom: 40px;
 }
-
-/* about-company */
 
 .about-company {
     position: relative;
@@ -703,8 +585,6 @@ table {
     margin-right: 0;
 }
 
-/* type-buiding */
-
 .type-building {
     background: var(--6);
     padding-top: 145px;
@@ -783,8 +663,6 @@ table {
     vertical-align: -6px;
 }
 
-/* last-article */
-
 .last-article .article-box .ceo {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -809,6 +687,11 @@ table {
     line-height: 200%;
     color: var(--1);
     padding-right: 67px;
+}
+
+.last-article .article-box .mobile-active {
+    display: none;
+
 }
 
 @media screen and (max-width: 1300px) {
@@ -884,6 +767,15 @@ table {
 }
 
 @media screen and (max-width: 1024px) {
+    .first-container .head-content .left-content .btn-wrap {
+        flex-direction: column;
+    }
+
+    .first-container .head-content .left-content .btn-wrap a.btn-catalog {
+        margin-right: 0;
+        margin-bottom: 19px;
+    }
+
     .cat-proj {
         background-image: none;
     }
@@ -902,9 +794,51 @@ table {
         display: none;
     }
 
+    .about-company .content .content-top .comments h4 {
+        margin-top: 10px;
+    }
+
+    .about-company .content .content-top .comments {
+        height: auto;
+    }
+
     .about-company .content .content-bottom {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 30px;
+        margin-top: 204px;
+    }
+
+    
+
+    .last-article .article-box .ceo .ceo-txt .mobile-active {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 19px;
+        margin-bottom: 19px;
+    }
+
+    .last-article .article-box .ceo .ceo-img {
+        display: none;
+    }
+
+    .last-article .article-box .ceo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .last-article .article-box .ceo .ceo-txt h5 {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 125%;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-left: 43px;
+        margin-right: 43px;
+    }
+
+    .last-article .article-box .ceo .ceo-txt p {
+        padding-right: 0;
     }
 }
 
@@ -942,14 +876,8 @@ table {
         margin-bottom: 19px;
     }
 
-    .first-container .head-content .left-content .btn-wrap,
     .catalouge-projects .box-img .btn-wrap {
         flex-direction: column;
-    }
-
-    .first-container .head-content .left-content .btn-wrap a.btn-catalog {
-        margin-right: 0;
-        margin-bottom: 19px;
     }
 
     .first-container .head-content .left-content .mobile-active {
@@ -1133,6 +1061,14 @@ table {
         display: none;
     }
 
+    .about-company .content .content-top .play {
+        display: none;
+    }
+
+    .about-company .content .content-bottom {
+        margin-top: 140px;
+    }
+    
     .about-company .content .content-bottom .box {
         margin-top: 61px;
     }
@@ -1192,45 +1128,23 @@ table {
 
     .last-article .article-box .boxs {
         overflow: scroll;
+        margin-bottom: 10px;
     }
 
     .last-article .article-box .slider {
         display: block;
     }
 
-    .last-article .article-box .slider img {
+    .last-article .article-box .slider .desktop-active {
         display: none;
     }
 
-    .last-article .article-box .ceo {
+    .last-article .article-box .mobile-active {
         display: flex;
-        flex-direction: column;
     }
 
-    .last-article .article-box .ceo .ceo-txt .mobile-active {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        margin-top: 19px;
-        margin-bottom: 19px;
-    }
-
-    .last-article .article-box .ceo .ceo-img {
-        display: none;
-    }
-
-    .last-article .article-box .ceo .ceo-txt h5 {
-        font-weight: 800;
-        font-size: 24px;
-        line-height: 125%;
-        text-align: center;
-        margin-bottom: 20px;
-        margin-left: 43px;
-        margin-right: 43px;
-    }
-
-    .last-article .article-box .ceo .ceo-txt p {
-        padding-right: 0;
+    .last-article .article-box .ce {
+        justify-items: center;
     }
 }
 
@@ -1253,7 +1167,7 @@ table {
         margin-right: 0px;
     }
 
-    
+
 }
 
 @media screen and (max-width: 425px) {

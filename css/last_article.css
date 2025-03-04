@@ -19,10 +19,12 @@
     justify-self: end;
     align-self: flex-end;
     padding-bottom: 6px;
+    display: flex;
+    flex-direction: row;
 }
 
-.last-article .article-box .slider .custom span,
-.last-article .article-box .custom span {
+.last-article .article-box .slider .custom .colo,
+.last-article .article-box .custom .colo {
     font-weight: 600;
     font-size: 16px;
     line-height: 100%;
@@ -36,12 +38,12 @@
 
 .last-article .article-box .slider .custom img:first-of-type,
 .last-article .article-box .custom img:first-of-type {
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .last-article .article-box .slider .custom img:last-of-type,
 .last-article .article-box .custom img:last-of-type  {
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .last-article .article-box .boxs {

@@ -7,6 +7,7 @@
     <title>Контакты</title>
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/variables.css">
@@ -16,6 +17,69 @@
 </head>
 
 <body>
+
+    <section class="headers">
+        <header class="center">
+            <div class="header-top desktop-active">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                    <span>TokarCompany - производственно -строительная компания</span>
+                </div>
+                <div class="contact">
+                    <span>Связаться напрямую:</span>
+                    <div>
+                        <a href="#"><img src="images/telegram.svg" alt="Telegram" title="Telegram">
+                        </a>
+                        <a href="#"><img src="images/WhatsApp.svg" alt="WhatsApp" title="WhatsApp">
+                        </a>
+                        <a href="#"><img src="images/viber.svg" alt="Viber" title="Viber">
+                        </a>
+                    </div>
+                </div>
+                <div class="work-time">
+                    <div>
+                        <a class="number" href="#">+3 80 (67) 175 56 30</a>
+                        <p class="work-to">с 09:00 до 18:00 (пн-вс)</p>
+                    </div>
+                    <div>
+                        <button id="call" class="ordercall-btn">Заказать звонок</button>
+                        <p class="call-free">Бесплатно по Украине</p>
+                    </div>
+                </div>
+                <div class="switch-language">
+                    <img src="images/lang.svg" alt="lang" title="Смена языка">
+                </div>
+            </div>
+            <div class="header-bottom desktop-active">
+                <nav class="menu">
+                    <ul class="color">
+                        <li class="brown"><a href="#">Жилое</a></li>
+                        <li class="brown"><a href="#">Коммерческое</a></li>
+                        <li class="brown"><a href="#">Садовое</a></li>
+                        <li class="white"><a href="about_company.html">О компании</a></li>
+                        <li class="white"><a href="#">Наши работы</a></li>
+                        <li class="white"><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mobile-active">
+                <div class="hed-top center">
+                    <img src="images/burger.svg" alt="burger" title="Меню">
+                    <img src="images/logo.png" alt="logo">
+                    <img src="images/phone_header.svg" alt="phone_header" title="Связаться">
+                </div>
+                <span id="burger" class="burger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+                <div class="hed-bot center">
+                    <h2>TokarCompany - производственно -строительная компания</h2>
+                </div>
+            </div>
+        </header>
+    </section>
+
     <section class="contacts">
         <div class="center">
             <div class="top-content">
@@ -193,7 +257,7 @@
                 <h3>Последние статьи</h3>
                 <div class="custom desktop-active">
                     <img class="customPrevBtn " src="images/ArrowPrev.svg" alt="prev" title="Переключатель слайда">
-                    <span>1/5</span>
+                    <div id="counter" class="colo"></div>
                     <img class="customNextBtn" src="images/ArrowNext.svg" alt="next" title="Переключатель слайда">
                 </div>
             </div>
@@ -305,10 +369,12 @@
                     </div>
                 </div>
             </div>
-            <div class="custom mobile-active">
-                <img class="customPrevBtn " src="images/ArrowPrev.svg" alt="prev" title="Переключатель слайда">
-                <span>1/5</span>
-                <img class="customNextBtn" src="images/ArrowNext.svg" alt="next" title="Переключатель слайда">
+            <div class="ce">
+                <div class="custom mobile-active">
+                    <img class="customPrevBtn " src="images/ArrowPrev.svg" alt="prev" title="Переключатель слайда">
+                    <div id="counterm" class="colo"></div>
+                    <img class="customNextBtn" src="images/ArrowNext.svg" alt="next" title="Переключатель слайда">
+                </div>
             </div>
         </div>
     </section>
@@ -343,8 +409,23 @@
             // With optional speed parameter
             // Parameters has to be in square bracket '[]'
             owl.trigger('prev.owl.carousel', [800]);
-        })
+        });
+
+        function counter(event) {
+            var element = event.target;         // DOM element, in this example .owl-carousel
+            var items = event.item.count;     // Number of items
+            var item = event.item.index + 1;     // Position of the current item
+
+            // it loop is true then reset counter from 1
+            if (item > items) {
+                item = item - items
+            }
+            $('#counter').html(+ item + " / " + items)
+            $('#counterm').html(+ item + " / " + items)
+        }
     </script>
+
+    <script src="js/script.js"></script>
 
 </body>
 

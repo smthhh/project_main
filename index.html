@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TokarCompany</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/last_article.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/btn.css">
@@ -16,9 +19,9 @@
 
     <div class="wrapper">
 
-        <section class="header">
+        <section class="headers">
             <header class="center">
-                <div class="header-top">
+                <div class="header-top desktop-active">
                     <div class="logo">
                         <img src="images/logo.png" alt="logo">
                         <span>TokarCompany - производственно -строительная компания</span>
@@ -40,27 +43,36 @@
                             <p class="work-to">с 09:00 до 18:00 (пн-вс)</p>
                         </div>
                         <div>
-                            <a class="ordercall-btn">Заказать звонок</a>
+                            <button id="call" class="ordercall-btn">Заказать звонок</button>
+                            <!-- <a class="ordercall-btn">Заказать звонок</a> -->
                             <p class="call-free">Бесплатно по Украине</p>
                         </div>
                     </div>
                     <div class="switch-language">
-                        <img src="" alt="">
+                        <img src="images/lang.svg" alt="lang" title="Смена языка">
                     </div>
                 </div>
-                <div class="header-bottom">
+                <div class="header-bottom desktop-active">
                     <nav class="menu">
-                        <ul class="color-brown">
-                            <li><a href="#">Жилое</a></li>
-                            <li><a href="#">Коммерческое</a></li>
-                            <li><a href="#">Садовое</a></li>
-                            <!-- </ul>
-                        <ul class="color-white"> -->
-                            <li><a href="about_company.html">О компании</a></li>
-                            <li><a href="#">Наши работы</a></li>
-                            <li><a href="contacts.html">Контакты</a></li>
+                        <ul class="color">
+                            <li class="brown"><a href="#">Жилое</a></li>
+                            <li class="brown"><a href="#">Коммерческое</a></li>
+                            <li class="brown"><a href="#">Садовое</a></li>
+                            <li class="white"><a href="about_company.html">О компании</a></li>
+                            <li class="white"><a href="#">Наши работы</a></li>
+                            <li class="white"><a href="contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
+                </div>
+                <div class="mobile-active">
+                    <div class="hed-top center">
+                        <img src="images/burger.svg" alt="burger" title="Меню">
+                        <img src="images/logo.png" alt="logo">
+                        <img src="images/phone_header.svg" alt="phone_header" title="Связаться">
+                    </div>
+                    <div class="hed-bot center">
+                        <h2>TokarCompany - производственно -строительная компания</h2>
+                    </div>
                 </div>
             </header>
         </section>
@@ -265,7 +277,8 @@
                         </div>
                     </div>
                     <div class="play">
-                        <a href="https://www.youtube.com/watch?v=uTw5Y7iEkjA" target="_blank"><img src="images/about-play.svg" alt="play"></a>
+                        <a href="https://www.youtube.com/watch?v=uTw5Y7iEkjA" target="_blank"><img
+                                src="images/about-play.svg" alt="play"></a>
                         <p>
                             Посмотреть короткое видео о компании (2:42 мин)
                         </p>
@@ -344,47 +357,128 @@
             <div class="article-box center">
                 <div class="slider">
                     <h3>Последние статьи</h3>
-                    <img src="images/slider.svg" alt="slider" title="Переключатель слайдов">
+                    <div class="custom desktop-active">
+                        <img class="customPrevBtn " src="images/ArrowPrev.svg" alt="prev" title="Переключатель слайда">
+                        <div id="counter" class="colo"></div>
+                        <img class="customNextBtn" src="images/ArrowNext.svg" alt="next" title="Переключатель слайда">
+                    </div>
                 </div>
-                <div class="boxs">
-                    <div class="box">
-                        <div class="box-image">
-                            <img src="images/article1.jpg" alt="article1">
-                            <span>
-                                Архитектура
-                            </span>
+                <div class="owl-carousel boxs">
+                    <div>
+                        <div class="box">
+                            <div class="box-image">
+                                <img src="images/article1.jpg" alt="article1">
+                                <span>
+                                    Архитектура
+                                </span>
+                            </div>
+                            <div class="txt">
+                                <h5>Готовый загородный дом или самостоятельное строительство?</h5>
+                                <p>Купить или построить дом с нуля – неизбежный вопрос, когда возникает желание
+                                    приобрести
+                                    частную недвижимость за городом. </p>
+                            </div>
                         </div>
-                        <div class="txt">
-                            <h5>Готовый загородный дом или самостоятельное строительство?</h5>
-                            <p>Купить или построить дом с нуля – неизбежный вопрос, когда возникает желание приобрести
-                                частную недвижимость за городом. </p>
+
+                    </div>
+                    <div>
+                        <div class="box">
+                            <div class="box-image">
+                                <img src="images/article2.jpg" alt="article2">
+                                <span>
+                                    Архитектура
+                                </span>
+                            </div>
+                            <div class="txt">
+                                <h5>Авторские проекты домов – почему эксклюзив выгоднее</h5>
+                                <p>Владельцу предстоит решить вопрос: купить готовый типовой вариант или заказать
+                                    индивидуальный. </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="box-image">
-                            <img src="images/article2.jpg" alt="article2">
-                            <span>
-                                Архитектура
-                            </span>
-                        </div>
-                        <div class="txt">
-                            <h5>Авторские проекты домов – почему эксклюзив выгоднее</h5>
-                            <p>Владельцу предстоит решить вопрос: купить готовый типовой вариант или заказать
-                                индивидуальный. </p>
+                    <div>
+                        <div class="box">
+                            <div class="box-image">
+                                <img src="images/article3.jpg" alt="article3">
+                                <span>
+                                    Архитектура
+                                </span>
+                            </div>
+                            <div class="txt">
+                                <h5>Красивые дома: 100+ фото лучших проектов</h5>
+                                <p>Современная малоэтажная застройка в России представлена как типовыми архитектурными
+                                    решениями, популярными.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="box-image">
-                            <img src="images/article3.jpg" alt="article3">
-                            <span>
-                                Архитектура
-                            </span>
+                    <div>
+                        <div class="box">
+                            <div class="box-image">
+                                <img src="images/article1.jpg" alt="article1">
+                                <span>
+                                    Архитектура
+                                </span>
+                            </div>
+                            <div class="txt">
+                                <h5>Готовый загородный дом или самостоятельное строительство?</h5>
+                                <p>Купить или построить дом с нуля – неизбежный вопрос, когда возникает желание
+                                    приобрести
+                                    частную недвижимость за городом. </p>
+                            </div>
                         </div>
-                        <div class="txt">
-                            <h5>Красивые дома: 100+ фото лучших проектов</h5>
-                            <p>Современная малоэтажная застройка в России представлена как типовыми архитектурными
-                                решениями, популярными.</p>
+                    </div>
+                    <div>
+                        <div class="box">
+                            <div class="box-image">
+                                <img src="images/article2.jpg" alt="article2">
+                                <span>
+                                    Архитектура
+                                </span>
+                            </div>
+                            <div class="txt">
+                                <h5>Авторские проекты домов – почему эксклюзив выгоднее</h5>
+                                <p>Владельцу предстоит решить вопрос: купить готовый типовой вариант или заказать
+                                    индивидуальный. </p>
+                            </div>
                         </div>
+                    </div>
+                    <div>
+                        <div class="box">
+                            <div class="box-image">
+                                <img src="images/article3.jpg" alt="article3">
+                                <span>
+                                    Архитектура
+                                </span>
+                            </div>
+                            <div class="txt">
+                                <h5>Красивые дома: 100+ фото лучших проектов</h5>
+                                <p>Современная малоэтажная застройка в России представлена как типовыми архитектурными
+                                    решениями, популярными.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="box">
+                            <div class="box-image">
+                                <img src="images/article1.jpg" alt="article1">
+                                <span>
+                                    Архитектура
+                                </span>
+                            </div>
+                            <div class="txt">
+                                <h5>Готовый загородный дом или самостоятельное строительство?</h5>
+                                <p>Купить или построить дом с нуля – неизбежный вопрос, когда возникает желание
+                                    приобрести
+                                    частную недвижимость за городом. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ce">
+                    <div class="custom mobile-active">
+                        <img class="customPrevBtn " src="images/ArrowPrev.svg" alt="prev" title="Переключатель слайда">
+                        <div id="counterm" class="colo"></div>
+                        <img class="customNextBtn" src="images/ArrowNext.svg" alt="next" title="Переключатель слайда">
                     </div>
                 </div>
 
@@ -409,9 +503,56 @@
                 </div>
             </div>
         </section>
-
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 3
+                }
+            },
+            responsiveBaseElement: '.boxs',
+
+            onInitialized: counter, //When the plugin has initialized.
+            onTranslated: counter //When the translation of the stage has finished.
+        });
+        var owl = $('.owl-carousel');
+        owl.owlCarousel();
+        // Go to the next item
+        $('.customNextBtn').click(function () {
+            owl.trigger('next.owl.carousel', [800]);
+        })
+        // Go to the previous item
+        $('.customPrevBtn').click(function () {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            owl.trigger('prev.owl.carousel', [800]);
+        });
+
+        function counter(event) {
+            var element = event.target;         // DOM element, in this example .owl-carousel
+            var items = event.item.count;     // Number of items
+            var item = event.item.index + 1;     // Position of the current item
+
+            // it loop is true then reset counter from 1
+            if (item > items) {
+                item = item - items
+            }
+            $('#counter').html(+ item + " / " + items)
+            $('#counterm').html(+ item + " / " + items)
+        }
+    </script>
 </body>
 
 </html>

@@ -141,7 +141,9 @@ table {
     margin: 0 auto;
 }
 
-
+.headers .mobile-active .hed-bot{
+    display: none;
+}
 
 .contacts .top-content .info {
     display: grid;
@@ -523,6 +525,18 @@ table {
 
     .last-article .article-box div.boxs {
         margin-bottom: 0;
+    }
+
+    .last-article .article-box .slider .desktop-active {
+        display: none;
+    }
+
+    .last-article .article-box .mobile-active {
+        display: flex;
+    }
+
+    .last-article .article-box .ce {
+        justify-items: center;
     }
 
 }
