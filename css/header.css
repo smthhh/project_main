@@ -200,6 +200,13 @@
 
 .headers .hed-top img:nth-of-type(1) {
     justify-self: start;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.headers .hed-top img:nth-of-type(1):hover {
+    transform: scale(1.1);
+    transform: rotate(90deg);
 }
 
 .headers .hed-top img:nth-of-type(2) {
@@ -227,6 +234,174 @@
     padding-bottom: 10px;
 }
 
+.headers .burger {
+    display: none;
+}
+
+/* burger */
+
+.headers .mobile-active .hed-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headers .mobile-active .hed-top img:nth-of-type(2) {
+    width: 150px;
+}
+
+.headers .burger .top-mob-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    background: var(--6);
+}
+
+.headers .burger .top-mob-menu h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--1);
+    margin-left: 20px;
+}
+
+.headers .burger .top-mob-menu img {
+    fill: var(--1);
+    width: 17px;
+    height: 17px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.headers .burger .top-mob-menu img:hover {
+    transform: scale(1.2);
+    transform: rotate(365deg);
+}
+
+.accordion-flush>.accordion-item>.accordion-header .accordion-button,
+.accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed {
+    background: var(--6);
+}
+
+.accordion-flush>.accordion-item>.accordion-collapse {
+    background: var(--6);
+}
+
+.accordion-flush>.accordion-item>.accordion-collapse a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 157%;
+    text-align: center;
+    color: var(--1);
+    margin-bottom: 10px;
+}
+
+.headers .burger .bur-menu {
+    width: 100%;
+    height: 55px;
+    background: var(--6);
+    align-content: center;
+    text-align: center;
+    border: 1px solid var(--8);
+    transition: .8s;
+}
+
+.headers .burger .bur-menu:hover {
+
+    border: 1px solid darkblue;
+}
+
+.headers .burger .bur-menu a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 146%;
+    letter-spacing: 0.08em;
+    color: var(--1);
+}
+
+.headers .burger .bur-bot-menu {
+    width: 100%;
+    height: 100vh;
+    background: var(--6);
+    text-align: center;
+}
+
+.headers .burger .bur-bot-menu .contact1 {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.headers .burger .bur-bot-menu .contact1 a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: 0.08em;
+    text-align: center;
+    color: var(--1);
+}
+
+.headers .burger .work-time1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px
+    ;
+}
+
+.headers .burger .work-time1 .number {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 80%;
+    color: var(--1);
+    text-decoration: none;
+    margin-bottom: 7px;
+    padding-top: 10px;
+    white-space: nowrap;
+}
+
+.headers .burger .work-time1 .work-to {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.08em;
+    color: var(--1);
+    text-align: center;
+}
+
+.headers .burger .work-time1 .ordercall-btn {
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 123%;
+    text-align: center;
+    color: var(--3);
+    width: 160px;
+    height: 46px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(203, 135, 52, 0.2);
+    background: linear-gradient(180deg, #f39c32 0%, #cb8734 100%);
+}
+
+.headers .burger .work-time1 .call-free {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 164%;
+    letter-spacing: 0.08em;
+    color: var(--1);
+    text-align: center;
+    margin-top: 7px;
+}
+
 @media screen and (max-width: 1200px) {
     .headers .header-top .contact span {
         margin-right: 10px;
@@ -246,15 +421,31 @@
     .headers .mobile-active {
         display: block;
     }
+
+    .headers .burger {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -100%;
+    }
+
+    .headers .burger.show {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        transition: .8s;
+    }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .headers .hed-bot h2 {
         padding-bottom: 0;
     }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
     .headers .hed-top img:nth-of-type(2) {
         width: 147px;
     }
