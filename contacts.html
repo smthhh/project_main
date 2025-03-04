@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/variables.css">
@@ -44,8 +45,10 @@
                             <h5>
                                 Телефоны:
                             </h5>
-                            <p>Отдел продаж:<a class="sil" href="#">+38 (098) 188 55 66</a></p>
-                            <p>Отдел логистики:<a class="sil" href="#">+38 (068) 704 37 77</a></p>
+                            <p>Отдел продаж:<br class="mobile-active"><a class="sil" href="#">+38 (098) 188 55 66</a>
+                            </p>
+                            <p>Отдел логистики:<br class="mobile-active"><a class="sil" href="#">+38 (068) 704 37 77</a>
+                            </p>
                             <a class="cvet" href="#">Позвонить компании</a>
                         </div>
                         <img src="images/contact1.svg" alt="contact1">
@@ -55,8 +58,10 @@
                             <h5>
                                 Почта:
                             </h5>
-                            <p>Отдел продаж:<a class="sil" href="#">sales.tokarmebel@gmail.com</a></p>
-                            <p>Отдел логистики:<a class="sil" href="#">logistics.tokarmebel@gmail.com</a></p>
+                            <p>Отдел продаж:<br class="mobile-active"><a class="sil"
+                                    href="#">sales.tokarmebel@gmail.com</a></p>
+                            <p>Отдел логистики:<br class="mobile-active"><a class="sil"
+                                    href="#">logistics.tokarmebel@gmail.com</a></p>
                             <a class="cvet" href="#">Написать на почту (отвечаем ...)</a>
                         </div>
                         <img src="images/contact2.svg" alt="contact2">
@@ -67,8 +72,8 @@
                                 График работы:
                             </h5>
 
-                            <p>Пн. - Пт.:<span>с 9:00 до 18:00</span></p>
-                            <p>Сб. - Вс.:<span>Выходной</span></p>
+                            <p>Пн. - Пт.:<br class="mobile-active"><span>с 9:00 до 18:00</span></p>
+                            <p>Сб. - Вс.:<br class="mobile-active"><span>Выходной</span></p>
                             <a class="cvet" href="#">Посетить лично в офис</a>
                         </div>
                         <img src="images/contact3.svg" alt="contact3">
@@ -79,9 +84,11 @@
                                 Мессенджеры:
                             </h5>
                             <div class="conn">
-                                <a class="message" href="#"><img src="images/telegram.svg" alt="telegram"></a>
-                                <a class="message" href="#"><img src="images/WhatsApp.svg" alt="WhatsApp"></a>
-                                <a class="message" href="#"><img src="images/viber.svg" alt="viber"></a>
+                                <a class="message" href="#"><img class="msi" src="images/telegram.svg"
+                                        alt="telegram"></a>
+                                <a class="message" href="#"><img class="msi" src="images/WhatsApp.svg"
+                                        alt="WhatsApp"></a>
+                                <a class="message" href="#"><img class="msi" src="images/viber.svg" alt="viber"></a>
                             </div>
                             <a class="cvet" href="#">Написать в соцсети (отвечаем ...)</a>
                         </div>
@@ -96,11 +103,10 @@
                 </div>
                 <div class="right">
                     <div class="top">
-                        <h3>Закажите консультацию, если сомневаетесь</h3>
-                        <div class="intl-tel-input">
-                            
+                        <div>
+                            <h3>Закажите консультацию, если сомневаетесь</h3>
+                            <p>Отправляя данные, Вы соглашаетесь на обработку<a href="#"> персональных данных</a></p>
                         </div>
-                        <p>Отправляя данные, Вы соглашаетесь на обработку персональных данных</p>
                     </div>
 
                     <div class="bot">
@@ -185,100 +191,160 @@
         <div class="article-box center">
             <div class="slider">
                 <h3>Последние статьи</h3>
-                <img src="images/slider.svg" alt="slider" title="Переключатель слайдов">
+                <div class="custom desktop-active">
+                    <img class="customPrevBtn " src="images/ArrowPrev.svg" alt="prev" title="Переключатель слайда">
+                    <span>1/5</span>
+                    <img class="customNextBtn" src="images/ArrowNext.svg" alt="next" title="Переключатель слайда">
+                </div>
             </div>
-            <div class="boxs">
-                <div class="box">
-                    <div class="box-image">
-                        <img src="images/article1.jpg" alt="article1">
-                        <span>
-                            Архитектура
-                        </span>
+            <div class="owl-carousel boxs">
+                <div>
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="images/article1.jpg" alt="article1">
+                            <span>
+                                Архитектура
+                            </span>
+                        </div>
+                        <div class="txt">
+                            <h5>Готовый загородный дом или самостоятельное строительство?</h5>
+                            <p>Купить или построить дом с нуля – неизбежный вопрос, когда возникает желание приобрести
+                                частную недвижимость за городом. </p>
+                        </div>
                     </div>
-                    <div class="txt">
-                        <h5>Готовый загородный дом или самостоятельное строительство?</h5>
-                        <p>Купить или построить дом с нуля – неизбежный вопрос, когда возникает желание приобрести
-                            частную недвижимость за городом. </p>
+
+                </div>
+                <div>
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="images/article2.jpg" alt="article2">
+                            <span>
+                                Архитектура
+                            </span>
+                        </div>
+                        <div class="txt">
+                            <h5>Авторские проекты домов – почему эксклюзив выгоднее</h5>
+                            <p>Владельцу предстоит решить вопрос: купить готовый типовой вариант или заказать
+                                индивидуальный. </p>
+                        </div>
                     </div>
                 </div>
-                <div class="box">
-                    <div class="box-image">
-                        <img src="images/article2.jpg" alt="article2">
-                        <span>
-                            Архитектура
-                        </span>
-                    </div>
-                    <div class="txt">
-                        <h5>Авторские проекты домов – почему эксклюзив выгоднее</h5>
-                        <p>Владельцу предстоит решить вопрос: купить готовый типовой вариант или заказать
-                            индивидуальный. </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="box-image">
-                        <img src="images/article3.jpg" alt="article3">
-                        <span>
-                            Архитектура
-                        </span>
-                    </div>
-                    <div class="txt">
-                        <h5>Красивые дома: 100+ фото лучших проектов</h5>
-                        <p>Современная малоэтажная застройка в России представлена как типовыми архитектурными
-                            решениями, популярными.</p>
+                <div>
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="images/article3.jpg" alt="article3">
+                            <span>
+                                Архитектура
+                            </span>
+                        </div>
+                        <div class="txt">
+                            <h5>Красивые дома: 100+ фото лучших проектов</h5>
+                            <p>Современная малоэтажная застройка в России представлена как типовыми архитектурными
+                                решениями, популярными.</p>
+                        </div>
                     </div>
                 </div>
+                <div>
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="images/article1.jpg" alt="article1">
+                            <span>
+                                Архитектура
+                            </span>
+                        </div>
+                        <div class="txt">
+                            <h5>Готовый загородный дом или самостоятельное строительство?</h5>
+                            <p>Купить или построить дом с нуля – неизбежный вопрос, когда возникает желание приобрести
+                                частную недвижимость за городом. </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="images/article2.jpg" alt="article2">
+                            <span>
+                                Архитектура
+                            </span>
+                        </div>
+                        <div class="txt">
+                            <h5>Авторские проекты домов – почему эксклюзив выгоднее</h5>
+                            <p>Владельцу предстоит решить вопрос: купить готовый типовой вариант или заказать
+                                индивидуальный. </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="images/article3.jpg" alt="article3">
+                            <span>
+                                Архитектура
+                            </span>
+                        </div>
+                        <div class="txt">
+                            <h5>Красивые дома: 100+ фото лучших проектов</h5>
+                            <p>Современная малоэтажная застройка в России представлена как типовыми архитектурными
+                                решениями, популярными.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="box">
+                        <div class="box-image">
+                            <img src="images/article1.jpg" alt="article1">
+                            <span>
+                                Архитектура
+                            </span>
+                        </div>
+                        <div class="txt">
+                            <h5>Готовый загородный дом или самостоятельное строительство?</h5>
+                            <p>Купить или построить дом с нуля – неизбежный вопрос, когда возникает желание приобрести
+                                частную недвижимость за городом. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom mobile-active">
+                <img class="customPrevBtn " src="images/ArrowPrev.svg" alt="prev" title="Переключатель слайда">
+                <span>1/5</span>
+                <img class="customNextBtn" src="images/ArrowNext.svg" alt="next" title="Переключатель слайда">
             </div>
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
     <script>
-        const input = document.querySelector("#phone");
-        const button = document.querySelector("#btn");
-        const errorMsg = document.querySelector("#error-msg");
-        const validMsg = document.querySelector("#valid-msg");
-
-        // here, the index maps to the error code returned from getValidationError - see readme
-        const errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"];
-
-        // initialise plugin
-        const iti = window.intlTelInput(input, {
-            initialCountry: "us",
-            loadUtils: () => import("/intl-tel-input/js/utils.js?1733756310855"),
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 3
+                }
+            },
+            responsiveBaseElement: '.boxs'
         });
-
-        const reset = () => {
-            input.classList.remove("error");
-            errorMsg.innerHTML = "";
-            errorMsg.classList.add("hide");
-            validMsg.classList.add("hide");
-        };
-
-        const showError = (msg) => {
-            input.classList.add("error");
-            errorMsg.innerHTML = msg;
-            errorMsg.classList.remove("hide");
-        };
-
-        // on click button: validate
-        button.addEventListener('click', () => {
-            reset();
-            if (!input.value.trim()) {
-                showError("Required");
-            } else if (iti.isValidNumber()) {
-                validMsg.classList.remove("hide");
-            } else {
-                const errorCode = iti.getValidationError();
-                const msg = errorMap[errorCode] || "Invalid number";
-                showError(msg);
-            }
-        });
-
-        // on keyup / change flag: reset
-        input.addEventListener('change', reset);
-        input.addEventListener('keyup', reset);
+        var owl = $('.owl-carousel');
+        owl.owlCarousel();
+        // Go to the next item
+        $('.customNextBtn').click(function () {
+            owl.trigger('next.owl.carousel', [800]);
+        })
+        // Go to the previous item
+        $('.customPrevBtn').click(function () {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            owl.trigger('prev.owl.carousel', [800]);
+        })
     </script>
-
 
 </body>
 
